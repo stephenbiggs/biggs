@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title><%= content_for?(:title) ? yield(:title) : "Template" %></title>
+
+    <%= stylesheet_link_tag    "application" %>
+    <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= csrf_meta_tags %>
+  </head>
+
+  <body>
+
+    <%= render 'shared/header' %>
+
+
+    <!-- Main Body -->
+    <section id="content">
+
+      <% if flash[:error].present? %>
+        <div data-alert>
+          <%= flash[:error] %>
+        </div>
+      <% end %>
+
+      <% if flash[:success].present? %>
+        <div data-alert>
+          <%= flash[:success] %>
+        </div>
+      <% end %>
+
+
+
+                                                        <%= yield %>
+
+      
+
+    </section>
+    <!-- Main Body END -->
+
+
+    <%= render 'shared/footer' %>
+
+  </body>
+</html>
