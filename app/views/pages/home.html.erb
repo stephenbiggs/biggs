@@ -1,45 +1,33 @@
+<div class="flex flex-wrap">
 
-
-<div class="flex justify-center py-10">
-  <%= image_tag('biggs.jpg', class: "w-48 h-48 rounded-full") %>
-</div>
-
-
-<div class="bg-white">
-  <div class="max-w-screen-xl mx-auto text-center sm:px-6 lg:py-2 lg:px-8">
-    <h2 class="text-3xl leading-9 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
-      Stephen Biggs
-    </h2>
+  <div class="w-full sm:w-full md:w-1/3 lg:w-1/4 xl:w-1/4 bg-white lg:min-h-screen p-8 md:fixed">
+    <h1 class="text-6xl font-bold mb-8">Biggs</h1>
+    <p class="mb-8">Stephen Biggs is a Chartered Surveyor and Ruby on Rails web developer from Manchester</p>
+    <p class="mb-4">+44 (0)7957941524</p>
+    <p class="mb-4">hello@stephenbiggs.co.uk</p>
+    <a href="mailto:hello@stephenbiggs.co.uk" class="btn-blue">Say Hello!</a>
   </div>
-</div>
 
-<div class="py-12 bg-white">
-  <div class="max-w-xl mx-auto px-4 sm:px-6 lg:max-w-screen-xl lg:px-8">
-    <div class="lg:grid lg:grid-cols-3 lg:gap-8">
-      <div>
-        <div class="mt-5">
-          <h5 class="text-lg leading-6 font-medium text-gray-900">Chartered Surveyor</h5>
-          <p class="mt-2 text-base leading-6 text-gray-500">
-            With more than 15 years experience of private practise consulting delivering technical services for clients with housing, commercial, industial and retail interest.
-          </p>
-        </div>
-      </div>
-      <div class="mt-10 lg:mt-0">
-        <div class="mt-5">
-          <h5 class="text-lg leading-6 font-medium text-gray-900">Project Manager</h5>
-          <p class="mt-2 text-base leading-6 text-gray-500">
-            Experienced in project delivery for both large and small instructions. 
-          </p>
-        </div>
-      </div>
-      <div class="mt-10 lg:mt-0">
-        <div class="mt-5">
-          <h5 class="text-lg leading-6 font-medium text-gray-900">Full Stack Web Developer</h5>
-          <p class="mt-2 text-base leading-6 text-gray-500">
-            Specialises in Ruby on Rails, HTML, CSS and a sprinkle of JavaScript, building web products for startups.
-          </p>
-        </div>
-      </div>
+  <div class="w-full sm:w-full md:w-2/3 lg:w-3/4 xl:w-3/4 bg-yellow-300 lg:min-h-screen md:absolute md:top-0 md:right-0 flex flex-wrap">
+   
+    <div class="w-full sm:w-full lg:w-1/2">
+      <div class="w-full h-full object-cover"><%= image_tag('building.jpg') %></div>
     </div>
+    <div class="w-full sm:w-full lg:w-1/2 p-8 md:p-6 xl:p-10">
+      <h2 class="lg:text-2xl xl:text-4xl font-bold mb-4">Building Surveyor</h2>
+      <p class="mb-4 lg:text-sm xl:text-base">More than 15 years experience providing technical services to residential, retail, commercial and industrial clients.</p>
+      <p class="mb-4 lg:text-sm xl:text-base">Fluent in design, specification and defect diagnosis with experience in major loss reinstatement.</p>
+    </div>
+
+    <div class="w-full sm:w-full lg:w-2/6 p-8 md:p-6 xl:p-10">
+      <h2 class="lg:text-2xl xl:text-4xl font-bold mb-4">Project Manager</h2>
+      <p class="mb-4 lg:text-sm xl:text-base">Overseen projects from inception to completion ranging in value up to £25m.</p>
+      <p class="mb-4 lg:text-sm xl:text-base">Experienced in contract admin, cost control and general project co-ordination.</p>
+    </div>
+    <div class="w-full sm:w-full lg:w-4/6">
+      <div class="w-full h-full object-cover"><%= image_tag('stairs.jpg') %></div>
+    </div>
+
   </div>
+
 </div>
